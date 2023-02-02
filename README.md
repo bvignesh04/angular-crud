@@ -4,12 +4,12 @@ use node version v16.15.1 above
 # install dependencies
 $ npm install
 
-!important -- for runing client server and json server , use two different terminals
+## !important -- for runing client server and json server , use two different terminals
 
-For running client server ,which will be lisening on port http://localhost:4200/
+## For running client server ,which will be lisening on port http://localhost:4200/
 $ npm run dev
 
-for running json server , which will be lisening on port localhost:3000
+## for running json server , which will be lisening on port localhost:3000
 $ npm run db:serve
 
 build for production and launch server
