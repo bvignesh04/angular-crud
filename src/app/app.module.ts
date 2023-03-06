@@ -24,6 +24,9 @@ import { MatTableModule } from '@angular/material/table';
 
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
+import { LoginComponent } from './login/login.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { DataComponent } from './data/data.component';
 
 
 
@@ -33,6 +36,9 @@ import {MatSortModule} from '@angular/material/sort';
   declarations: [
     AppComponent,
     DialogComponent,
+    LoginComponent,
+    SignInComponent,
+    DataComponent,
 
   ],
   imports: [
@@ -55,7 +61,9 @@ import {MatSortModule} from '@angular/material/sort';
     // Observable
     MatPaginatorModule,
     MatSortModule,
-    MatTableModule
+    MatTableModule,
+    ReactiveFormsModule
+    
   
    
     

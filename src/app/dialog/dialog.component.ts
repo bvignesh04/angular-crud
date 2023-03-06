@@ -13,8 +13,9 @@ import {MatDialogRef,MAT_DIALOG_DATA} from '@angular/material/dialog'
   styleUrls: ['./dialog.component.css']
 })
 export class DialogComponent implements OnInit {
-freshnessList = ['Fresh','Brand New','Refurbished']
-productForm !:FormGroup
+statusList = ['Credit','Processing','Not credit']
+roleList = ['admin','user','guest']
+employeeForm !:FormGroup
 actionBtn:string = 'Save'
 constructor(private formBuilder:FormBuilder,
   private api:ApiService,
@@ -26,36 +27,38 @@ constructor(private formBuilder:FormBuilder,
 ngOnInit(): void {
   //check why we implements OnInit with export class
 
-  this.productForm = this.formBuilder.group({
-    productName:['',Validators.required],
-    category:['',Validators.required],
-    freshness:['',Validators.required],
-    price:['',Validators.required],
-    comment:['',Validators.required],
+  this.employeeForm = this.formBuilder.group({
+    employee:['',Validators.required],
+    designation:['',Validators.required],
+    status:['',Validators.required],
+    salary:['',Validators.required],
+    location:['',Validators.required],
+    
     date:['',Validators.required]
     
   });
 
   if(this.editData){
     this.actionBtn = 'Update'
-    this.productForm.controls['productName'].setValue(this.editData.productName)
-    this.productForm.controls['category'].setValue(this.editData.category)
-    this.productForm.controls['freshness'].setValue(this.editData.freshness)
-    this.productForm.controls['price'].setValue(this.editData.price)
-    this.productForm.controls['comment'].setValue(this.editData.comment)
-    this.productForm.controls['date'].setValue(this.editData.date)
+    this.employeeForm.controls['employee'].setValue(this.editData.employee)
+    this.employeeForm.controls['designation'].setValue(this.editData.designation)
+    this.employeeForm.controls['status'].setValue(this.editData.status)
+    this.employeeForm.controls['salary'].setValue(this.editData.salary)
+    this.employeeForm.controls['location'].setValue(this.editData.location)
+    this.employeeForm.controls['date'].setValue(this.editData.date)
+    
  
   }
 }
 addProduct(){
   if(!this.editData){
-    if(this.productForm.valid){
-      this.api.postProduct(this.productForm.value)
+    if(this.employeeForm.valid){
+      this.api.postProduct(this.employeeForm.value)
       .subscribe({
         next:(res:any)=>{
           alert('Product added successfully');
           //FOR CLOSING DIALOG
-          this.productForm.reset()
+          this.employeeForm.reset()
           this.dialogRef.close('save')
           
         },
@@ -63,7 +66,7 @@ addProduct(){
           alert("Error while Adding the product")
         }
       })
-      console.log(this.productForm.value)
+      console.log(this.employeeForm.value)
     }
   }
   else{
@@ -71,11 +74,11 @@ addProduct(){
   }
   }
   updateProduct(){
-    this.api.putProduct(this.productForm.value,this.editData.id)
+    this.api.putProduct(this.employeeForm.value,this.editData.id)
     .subscribe({
       next:(res)=>{
         alert("Product Updated Successfully")
-        this.productForm.reset()
+        this.employeeForm.reset()
         this.dialogRef.close('update')
       },
       error:()=>{

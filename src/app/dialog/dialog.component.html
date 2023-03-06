@@ -1,18 +1,19 @@
-<h1 mat-dialog-title>Add Product Form</h1>
+<h1 mat-dialog-title>Employee Salary Form</h1>
 <div mat-dialog-content>
-   <form [formGroup]="productForm" class="form">
+   <form [formGroup]="employeeForm" class="form">
     <mat-form-field appearance="outline">
-        <mat-label>Product Name</mat-label>
-        <input formControlName="productName" matInput placeholder="Enter a product">
+        <mat-label>Employee Name</mat-label>
+        <input formControlName="employee" matInput placeholder="Enter a employee">
         </mat-form-field>
 
     <mat-form-field appearance="outline">
-        <mat-label>Product Category</mat-label>
-       <mat-select  formControlName="category" placeholder="Category">
-        <mat-option value="Fruits">Fruits</mat-option>
-        <mat-option value="Vegetables">Vegetables</mat-option>
-        <mat-option value="Electronics">Electronics</mat-option>
-        <mat-option value="Groceries">Groceries</mat-option>
+        <mat-label>Designation</mat-label>
+       <mat-select  formControlName="designation" placeholder="designation">
+        <mat-option value="Business Analyst">Business Analyst</mat-option>
+        <mat-option value="Team Lead">Team Lead</mat-option>
+        <mat-option value="Project Manager">Project Manager</mat-option>
+        <mat-option value="FrontEnd developer">FrontEnd developer</mat-option>
+        <mat-option value="BackEnd developer">BackEnd developer</mat-option>
         <mat-option value="Others">Others</mat-option>
         </mat-select>
     </mat-form-field>
@@ -25,19 +26,20 @@
             <mat-datepicker #picker></mat-datepicker>
           </mat-form-field>
 
-          <label for="freshness"><h2>Product freshness</h2></label>
-          <mat-radio-group formControlName="freshness" class="example-radio-group">
-            <mat-radio-button class="example-radio-button  radioBtn" *ngFor="let fresh of freshnessList" [value]="fresh">{{fresh}} </mat-radio-button>
+          <label for="status"><h2>Status</h2></label>
+          <mat-radio-group formControlName="status" class="example-radio-group">
+            <mat-radio-button class="example-radio-button  radioBtn" *ngFor="let status of statusList" [value]="status">{{status}} </mat-radio-button>
           </mat-radio-group>
 
           <mat-form-field appearance="outline">
-            <mat-label>Price</mat-label>
-            <input formControlName="price" matInput placeholder="" type="number">
+            <mat-label>Salary</mat-label>
+            <input formControlName="salary" matInput placeholder="" type="number">
             </mat-form-field>
 
+
           <mat-form-field appearance="outline">
-            <mat-label>Location</mat-label>
-            <textarea formControlName="comment" matInput></textarea>
+            <mat-label>Remarks</mat-label>
+            <textarea formControlName="location" matInput></textarea>
             </mat-form-field>
    </form>
           

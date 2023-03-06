@@ -3,9 +3,9 @@ mat-form-field{
 }  
 
 .example-radio-group {
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
-    margin: 15px 0;
+    /* margin: 7px 0; */
     /* align-items: flex-start; */
   }
   

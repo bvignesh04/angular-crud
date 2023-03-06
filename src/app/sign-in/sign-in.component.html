@@ -1,0 +1,59 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Sign up</h1>
+                    <h4>Register Yourself!</h4>
+                </div>
+                
+                    <form class="mb-3" [formGroup]="signUpForm" (ngSubmit)="signUp()">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">FullName</label>
+                            <input type="text" formControlName="fullName" class="form-control" id="exampleInputPassword1">
+                            <!-- VALIDATION -->
+                            <div *ngIf="signUpForm.controls['fullName'].touched && signUpForm.hasError('required','fullName')">
+                              <span class="text-danger">*FullName is required</span>
+                            </div>
+                          </div>
+                          
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp"  class="form-text">We'll never share your email with anyone else.</div>
+                           <!-- VALIDATION -->
+
+                          <div *ngIf="signUpForm.controls['email'].touched && signUpForm.hasError('required','email')">
+                            <span class="text-danger">*Email is required</span>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" formControlName="passWord" class="form-control" id="exampleInputPassword1">
+                           <!-- VALIDATION -->
+                          <div *ngIf="signUpForm.controls['passWord'].touched && signUpForm.hasError('required','passWord')">
+                            <span class="text-danger">*Password is required</span>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Mobile</label>
+                          <input type="number" formControlName="mobile" class="form-control" id="exampleInputPassword1">
+                           <!-- VALIDATION -->
+                          <div *ngIf="signUpForm.controls['mobile'].touched && signUpForm.hasError('required','mobile')">
+                            <span class="text-danger">*Mobile number is required</span>
+                          </div>
+                        </div>
+                        
+                        
+                        <button type="submit" class="btn btn-primary" [disabled]="signUpForm.invalid">Sign Up</button>
+                      </form>
+                
+                <a  style="color:white" routerLink="/login">Already registered? Click to login!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>

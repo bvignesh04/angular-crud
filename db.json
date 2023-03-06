@@ -1,155 +1,84 @@
 {
   "productList": [
     {
-      "productName": "Rice",
-      "category": "groceries",
-      "freshness": "Brand New",
-      "price": 798,
-      "comment": "Slot1 Row1",
-      "date": "2023-01-02T18:30:00.000Z",
+      "employee": "Gopinath",
+      "designation": "BackEnd developer",
+      "status": "Credit",
+      "salary": 40000,
+      "location": "Diligent",
+      "date": "2023-03-02T18:30:00.000Z",
       "id": 1
     },
     {
-      "productName": "Wheat",
-      "category": "groceries",
-      "freshness": "Brand New",
-      "price": 966,
-      "comment": "Slot2 Row1",
-      "date": "2023-02-05T18:30:00.000Z",
+      "employee": "Durga",
+      "designation": "Project Manager",
+      "status": "Credit",
+      "salary": 60000,
+      "location": "Great",
+      "date": "2023-03-01T18:30:00.000Z",
       "id": 2
     },
     {
-      "productName": "Dhal",
-      "category": "groceries",
-      "freshness": "Brand New",
-      "price": 1110,
-      "comment": "Slot1 Row6",
-      "date": "2023-01-22T18:30:00.000Z",
-      "id": 3
-    },
-    {
-      "productName": "onion",
-      "category": "Vegetables",
-      "freshness": "Fresh",
-      "price": 660,
-      "comment": "Slot5 Row1",
-      "date": "2023-01-31T18:30:00.000Z",
-      "id": 4
-    },
-    {
-      "productName": "Sugar",
-      "category": "groceries",
-      "freshness": "Brand New",
-      "price": 880,
-      "comment": "Slot11 Row1",
-      "date": "2023-01-30T18:30:00.000Z",
+      "employee": "Ramesh",
+      "designation": "Business Analyst",
+      "status": "Processing",
+      "salary": 27000,
+      "location": "way to go",
+      "date": "2023-03-02T18:30:00.000Z",
       "id": 5
     },
     {
-      "productName": "Potatoes",
-      "category": "Vegetables",
-      "freshness": "Fresh",
-      "price": 450,
-      "comment": "Slot3 Row2",
-      "date": "2023-02-01T18:30:00.000Z",
+      "employee": "Kumar",
+      "designation": "FrontEnd developer",
+      "status": "Credit",
+      "salary": 30000,
+      "location": "-",
+      "date": "2023-03-02T18:30:00.000Z",
       "id": 6
-    },
-    {
-      "productName": "Mango",
-      "category": "Fruits",
-      "freshness": "Fresh",
-      "price": 745,
-      "comment": "Slot11 Row6",
-      "date": "2023-02-01T18:30:00.000Z",
-      "id": 7
-    },
-    {
-      "productName": "JackFruit",
-      "category": "Fruits",
-      "freshness": "Fresh",
-      "price": 650,
-      "comment": "Slot18 Row4",
-      "date": "2023-01-22T18:30:00.000Z",
-      "id": 8
-    },
-    {
-      "productName": "Detergent",
-      "category": "Others",
-      "freshness": "Brand New",
-      "price": 550,
-      "comment": "Slot22 Row2",
-      "date": "2023-01-16T18:30:00.000Z",
-      "id": 9
-    },
-    {
-      "productName": "Dish Soap",
-      "category": "Others",
-      "freshness": "Brand New",
-      "price": 678,
-      "comment": "Slot22 Row11",
-      "date": "2023-01-31T18:30:00.000Z",
-      "id": 10
-    },
-    {
-      "productName": "Bleach",
-      "category": "Others",
-      "freshness": "Brand New",
-      "price": 397,
-      "comment": "Slot22 Row2",
-      "date": "2023-01-24T18:30:00.000Z",
-      "id": 11
-    },
-    {
-      "productName": "Banana",
-      "category": "Fruits",
-      "freshness": "Fresh",
-      "price": 763,
-      "comment": "Slot14 Row1",
-      "date": "2023-01-31T18:30:00.000Z",
-      "id": 13
-    },
-    {
-      "productName": "Avacadoes",
-      "category": "Fruits",
-      "freshness": "Fresh",
-      "price": 832,
-      "comment": "Slot12 Row4",
-      "date": "2023-02-01T18:30:00.000Z",
-      "id": 14
-    },
-    {
-      "productName": "BeetRoot",
-      "category": "Vegetables",
-      "freshness": "Fresh",
-      "price": 477,
-      "comment": "Slot44 Row1",
-      "date": "2023-01-31T18:30:00.000Z",
-      "id": 15
-    },
-    {
-      "productName": "Rice Flour",
-      "category": "Groceries",
-      "freshness": "Brand New",
-      "price": 673,
-      "comment": "Slot1 Row7",
-      "date": "2023-01-31T18:30:00.000Z",
-      "id": 16
-    },
-    {
-      "productName": "Salt",
-      "category": "Groceries",
-      "freshness": "Brand New",
-      "price": 370,
-      "comment": "Slot!2 Row9",
-      "date": "2023-01-31T18:30:00.000Z",
-      "id": 17
     }
   ],
-  "comments": [
+  "signUpUsers": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "fullName": "Rohit",
+      "email": "rohit@gmail.com",
+      "passWord": "12345678",
+      "mobile": 6382844709,
+      "id": 1
+    },
+    {
+      "fullName": "Rohit",
+      "email": "rohit@gmail.com",
+      "passWord": "12345678",
+      "mobile": 6382844708,
+      "id": 2
+    },
+    {
+      "fullName": "Rohit",
+      "email": "rohit@gmail.com",
+      "passWord": "12345678",
+      "mobile": 6382844709,
+      "id": 3
+    },
+    {
+      "fullName": "Rohit",
+      "email": "rohit@gmail.com",
+      "passWord": "12345678",
+      "mobile": 6382844708,
+      "id": 4
+    },
+    {
+      "fullName": "Rohit",
+      "email": "rohit@gmail.com",
+      "passWord": "12345678",
+      "mobile": 6382844789,
+      "id": 5
+    },
+    {
+      "fullName": "Rohit",
+      "email": "rohit@gmail.com",
+      "passWord": "12345678",
+      "mobile": 6382844709,
+      "id": 6
     }
   ],
   "profile": {
