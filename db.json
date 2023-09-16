@@ -1,15 +1,6 @@
 {
   "productList": [
     {
-      "employee": "Gopinath",
-      "designation": "BackEnd developer",
-      "status": "Credit",
-      "salary": 40000,
-      "location": "Diligent",
-      "date": "2023-03-02T18:30:00.000Z",
-      "id": 1
-    },
-    {
       "employee": "Durga",
       "designation": "Project Manager",
       "status": "Credit",
